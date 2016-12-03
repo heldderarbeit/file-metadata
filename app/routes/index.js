@@ -8,16 +8,16 @@ var upload = multer({});
 
 module.exports = function (app) {
 
-	var fileHandler = new FileHandler();
+    var fileHandler = new FileHandler();
 
-	app.route('/')
+    app.route('/')
         .get(function (req, res) {
             res.render('index.pug');
         });
         
     app.route('/uploads')
-	    .get(function (req, res) {
+	.get(function (req, res) {
             res.redirect('/');
         })
-		.post(upload.single('upload'), fileHandler.evaluate);
+	.post(upload.single('upload'), fileHandler.evaluate);
 };
