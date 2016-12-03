@@ -1,0 +1,36 @@
+{
+  "name": "file-metadata",
+  "version": "1.0.0",
+  "description": "Obtain MIME type, encoding and byte size for uploaded files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "heldderarbeit",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "multer": "^1.2.0",
+    "pug": "^2.0.0-beta6"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heldderarbeit/file-metadata.git"
+  },
+  "keywords": [
+    "Express",
+    "Node",
+    "javascript",
+    "multer",
+    "mimetype",
+    "encoding",
+    "bytesize"
+  ],
+  "bugs": {
+    "url": "https://github.com/heldderarbeit/file-metadata/issues"
+  },
+  "homepage": "https://github.com/heldderarbeit/file-metadata#readme"
+}

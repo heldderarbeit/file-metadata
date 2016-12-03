@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title File Metadata Service
+    link(rel='stylesheet', href='libs/bootstrap-3.3.7/css/bootstrap.min.css', type='text/css')
+    link(rel='stylesheet', href='libs/bootstrap-fileinput-4.3.6/css/fileinput.min.css', type='text/css')
+    link(rel='stylesheet', href='css/main.css', type='text/css')
+    script(src= 'libs/jquery-3.1.1/js/jquery.min.js', type='text/javascript', defer)
+    script(src= 'libs/bootstrap-fileinput-4.3.6/js/fileinput.min.js', type='text/javascript', defer)
+  body
+  
+    .container
+        
+      header
+        h1 File Metadata Service
+        
+      p Obtain MIME type, encoding and byte size for uploaded files
+      
+      .row
+        .col-xs-offset-1.col-xs-10
+          form(action='/uploads', method='post', enctype='multipart/form-data')
+           label.control-label Select File
+           input#input-1a.file(type='file', name='upload', data-show-preview='false')
